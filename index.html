@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT102N Portfolio</title>
+</head>
+    <style>
+        
+        .container{
+            height:1000vh;
+            width:100%;
+        }
+        .header{
+            display:flex;
+            flex-direction:row;
+            height:7vh;
+            background-color:black;
+            padding-top:1%;
+        }
+        .nav1{
+            display:flex;
+            flex-direction:row;
+            flex-grow:1;
+            align-item:right;
+            justify-item:right;
+            text-align:right;
+            padding-left:60%;
+            margin-right:5%;
+            padding-top:.5%;
+        }
+        .nav{
+            flex-grow:1;
+            color:white;
+        }
+        .logo{
+            align-item:left;
+            font-family:georgia;
+            color:white;
+            font-size:30px;
+            margin-left:3%;
+        }
+        .item1{
+            height: 90vh;
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            text-align:center;
+			margin-top:10%;
+        }
+        .circle{
+			background-color:grey;
+			height:500px;
+			width:370px;
+			border-radius:100%;
+			margin-left:36%;
+			background-image:url(bad.jpg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+        .named{
+            display:flex;
+            flex-direction:column;
+			margin-top:2%;
+        }
+        .name{
+            font-size:30px;
+            font-family:georgia;
+        }
+        .discription{
+            width:50%;
+            height:2vh;
+            display:flex;
+            justify-content:center;
+            align-item:center;
+            text-align:center;
+            flex-direction:column;
+            margin-left:25%;
+            margin-right:45%;
+            margin-top:1%;
+        }
+        .item2{
+            height: 100vh;
+            width: 100%;
+            display:flex;
+            flex-direction:row;
+            margin-top:15%;
+			box-shadow:0px 8px 16px rgba(0,0,0,0.2)
+        }
+        .title{
+            display:flex;
+            flex-direction:column;
+            flex-grow:1;
+        }
+        .title1{
+            width:50%;
+            height: 7vh;
+            display:flex;
+            flex-direction:column;
+            font-family:georgia;
+            color:black;
+            font-size:30px;
+            align-item:right;
+            text-align:right;
+            padding-left:35%;
+        }
+        .title2{
+            display:flex;
+            flex-direction:column;
+            flex-grow:1;
+            
+        }
+        .title3{
+            height: 4vh;
+            border:1px solid black;
+            background: white;
+            width: 18%;
+            padding-top:1%;
+            padding-left:2%;
+            margin-left:4%;
+            margin-top:4%;
+			text-align:center;
+			border-radius:5px;
+        }
+        .picture1{
+            height: 70vh;
+            width: 1%;
+            text-align:center;
+            display:flex;
+            justify-content:center;
+            align-item:center;
+            margin-left:38%;
+        }
+        .picture2{
+            height: 70vh;
+            width: 1%;
+            text-align:center;
+            display:flex;
+            justify-content:center;
+			margin-right:5%;
+			margin-left:42%;
+        }
+        .titles{
+            height: 50vh;
+            display:flex;
+            flex-direction:row;
+        }
+        .titles1{
+            flex-grow:1;
+            font-size:60px;
+            margin-left:3%;
+            height:15%;
+            display:flex;
+            flex-direction:column;
+            width: 10%;
+            padding-top:5%;
+            padding-left:30%;
+            margin-right:1%;
+        }
+        .description3{
+            flex-grow:2;
+            align-item:left;
+            text-align:left;
+            padding-top:10%;
+        }
+        .title4{
+            height: 6vh;
+            border:1px solid black;
+            background: black;
+            color:white;
+            width: 20%;
+            padding-left:1.5%;
+            padding-top:1%;
+            margin-left:4%;
+            margin-top:3%;
+			border-radius:5px;
+        }
+        .item3{
+            height: 25vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            text-align:center;
+            align-item:center;
+            font-family:georgia;
+            color:black;
+            font-size:20px;
+        }
+        .empty{
+            height:150vh;
+            display:flex;
+            flex-direction:row;
+			margin-top:5%;
+			border:10px solid white;
+			box-shadow:0px 8px 16px rgba(0,0,0,0.2)
+        }
+        .empty1{
+			border:5px solid white;
+            display:flex;
+            flex-direction:column;
+			flex-grow:1;
+		}
+		.empty2{
+			border:5px solid white;
+            display:flex;
+            flex-direction:column;
+			flex-grow:1;
+		}		
+		.empty3{
+			border:5px solid white;
+            display:flex;
+            flex-direction:column;
+			flex-grow:1;
+		}
+		.empty4{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(una.png);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}	
+		.empty5{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(work2.png);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			
+		}
+		.empty6{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(tw.png);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+		.empty7{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(face.png);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+		.empty8{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(yo.png);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+		.empty9{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(spot.png);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+		.empty10{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(men.jpeg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+		.empty11{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(man.jpeg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+		.empty12{
+			border:10px solid white;
+			flex-grow:1;
+			display:flex;
+            flex-direction:column;
+			background-image:url(photo.jpeg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+		.item4{
+			margin-top:15vh;
+		}
+        .brand{
+            display:flex;
+            flex-direction:row;
+            flex-grow:1;
+        }
+        .brand1{
+            display:flex;
+            flex-direction:row;
+            flex-grow:1;
+			margin-top:2%;
+        }
+        .brand2{
+            font-family:georgia;
+            color:black;
+            font-size:30px;
+            flex-grow:1;
+            display:flex;
+            justify-content:center;
+        }
+        .photo1{
+            flex-grow:1.5;
+            border:1px solid black;
+            background: yellow;
+            margin-right:2.5%;
+			height:50vh;
+            width: 22%;
+            display:flex;
+            justify-content:center;
+			background-image:url(back1.jpg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+        }
+        .brand3{
+            font-family:georgia;
+            color:black;
+            font-size:30px;
+            flex-grow:1;
+            display:flex;
+            justify-content:center;
+			padding-top:3%;
+        }
+        .photo2{
+			height:50vh;
+            flex-grow:1.5;
+            border:1px solid black;
+            background: yellow;
+            margin-top:2%;
+            margin-right:2.5%;
+            display:flex;
+            justify-content:center;
+			width: 5%;
+			background-image:url(beach.jpg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+        }
+        .item5{
+            height: 50vh;
+            display:flex;
+            flex-direction:column;
+            text-align:center;
+            align-item:center;
+            margin-top:10%;
+        }
+        .me{
+            font-family:georgia;
+            color:black;
+            font-size:40px;
+        }
+        .contact2{
+            display:flex;
+            flex-direction:row;
+            background: black;
+			height:30vh;
+			margin-top:1%;
+			box-shadow:0px 8px 16px rgba(0,0,0,0.2)
+        }
+        .contact3{
+            flex-grow:1;
+            border:5px solid white;
+            height: 7vh;
+            row-gap:10%;
+            padding-top:5%;
+			height:30vh;
+        }
+		.contact4{
+			font-size:20px;
+			color:white;
+		}
+		.contact5{
+			color:white;
+		}
+        .item6{
+            margin-top:10%;
+            height: 70vh;
+            display:flex;
+            flex-direction:row;
+        }
+        .pic{
+            flex-grow:4;
+            border:1px solid black;
+            display:flex;
+            justify-content:center;
+            background: yellow;
+			background-image:url(photo3.jpg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+        }
+        .login{
+            flex-grow:1;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            margin-left:3%;
+        }
+        .message{
+			text-align:top;
+            height:2vh;
+        }
+        .msg{
+           width:300px;
+		   height:90px;
+		   border-radius:5px;
+		   border:1px solid grey;
+		   padding-left:2%;
+        }
+		.web{
+			padding-bottom: 10px;
+			border-radius:5px solid grey;
+		}
+        .send{
+            height: 10%;
+            border:1px solid white;
+            background: blue;
+            color:white;
+            width: 23%;
+            padding-left:1%;
+            padding-top:1%;
+            margin-left:4%;
+            margin-top:20%;
+			border-radius:5px;
+        }
+		.footer{
+			height:50vh;
+			margin-top:5%;
+			background:pink;
+			display:flex;
+			flex-direction:column;
+			align-item:center;
+			text-align:center;
+			justify-item:center;
+			padding-top:15%;
+			background-image:url(cam.jpeg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+		.footer1{
+			margin-top:1%;
+			display:flex;
+			flex-direction:row;
+			background: #e8491d;
+			color:white;
+			height:10vh;
+			width:100%;
+		}
+		.social{
+			color:white;
+			font-size:20px;
+            font-family:georgia;
+		}
+		.headline{
+			display:flex;
+			justify-content:center;
+			text-align:center;
+			flex-grow:1;
+			flex-direction:column;
+		}
+		.sample{
+			display:flex;
+			flex-direction:column;
+		}
+		.footer2{
+			display:flex;
+			justify-content:center;
+			text-align:center;
+			background: #e8491d;
+			color:white;
+			margin-top:.2%;
+			height:5vh;
+		}
+		a{
+			text-decoration:none;
+			color:white;
+		}
+		.cc{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.online{
+			background:#c0c0c0;
+			height:9vh;
+			margin-top:5%;
+			display:flex;
+			flex-direction:row;
+			width:100%;
+		}
+		.naame{
+			display:flex;
+			flex-direction:column;
+			margin-left:5%;
+			margin-top:.5%;
+		}
+		.se{
+			width:300%;
+			border:1px #c0c0c0;
+			margin-top:1%;
+			margin-left:100%;
+			border-radius:5px;
+			padding-left:2%;
+		}
+
+		.sub{
+			height:5vh;
+			margin-left:60%;
+			margin-top:1%;
+			width:7%;
+			border-radius:5px;
+		}
+		.add{
+			width:10%;
+			height:5vh;
+			margin-left:45%;
+			margin-top:5%;
+			border-radius:5px;
+			background:#2b65ec;
+			color:white;
+		}
+    </style>
+    
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">EM</div> 
+            <div class="nav1">
+                <div class="nav"><a href="#four">Home</div></a>
+                <div class="nav"><a href="#tree">About</div></a>
+                <div class="nav"><a href="#one">Portfolio</div></a>
+                <div class="nav"><a href="#two">Contact</div></a>
+            </div>
+        </div>
+        <div class="item1" id="four">
+            <div class="circle"></div>
+            <div class="named">
+                <div id="mytext" class="name">Mipangcat Badro</div>
+                <div id="bad" class="discription">21 years old</div>
+            </div>
+			<button onclick="hide()" class="add">Login</button>
+			<div class="cc" id = "cc">
+				<div id="online" class="online">
+					<div class="naame">
+						<div class="naames">Name:</div>
+						<div class="naames">Description:</div>
+					</div>
+					<div class="naame">
+						<input class="se" id="text" placeholder="Name" ></input>
+						<input class="se" id="mipa" placeholder="Description" ></input>
+					</div>
+					<button onclick="change()" class="sub">Submit</button>
+				</div>
+			</div>
+        </div>
+        <div class="item2" id="tree">
+            <div class="title">
+                <div class="title1">I Am Photographer</div>
+                <div class="picture1"><img src="photo.jpeg"></img></div>
+            </div>
+            <div class="title2">
+                <div class="picture2"><img src="photo1.jpeg"></img></div>
+                <button class="title3">READ MORE</button>
+            </div>
+        </div>
+        <div class="titles">
+            <div class="titles1">We Build Digital</div>
+            <div class="description3">
+                <div class="description"> HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA</div>
+                <button class="title4">READ MORE</button>
+            </div>
+        </div>
+        <div class="item3">
+            <div class="design">We Design people inspired</div>
+            <div class="design">Experience that create positive</div>
+            <div class="design">change in people's lives</div>
+        </div>
+        <div class="empty">
+            <div class="empty1" id="one">
+                <a href="1st.html" class="empty4"><div class="empty4"></div></a>
+                <a href="index.html" class="empty5"><div class="empty5"></div></a>
+                <a href="activity.html" class="empty6"><div class="empty6"></div></a>
+            </div>
+            <div class="empty2">
+                <a href="facebook.html" class="empty7"><div class="empty7"></div></a>
+                <a href="youtube.html" class="empty8"><div class="empty8"></div></a>
+                <a href="spotify.html" class="empty9"><div class="empty9"></div></a>
+            </div>
+            <div class="empty3">
+                <div class="empty10"></div>
+                <div class="empty11"></div>
+                <div class="empty12"></div>
+            </div>
+        </div>
+        <div class="item4">
+            <div class="brand">
+                <div class="brand2">HONGKONG CITY</div>
+                <div class="photo1"></div>
+            </div>
+            <div class="brand1">
+                <div class="brand3">BEACH</div>
+                <div class="photo2"></div>
+            </div>
+        </div>
+        <div class="item5" id="two">
+            <div class="contact">
+                <div class="contact1">
+                    <div class="me">Contact Me</div>
+                    <div class="this">let's start a conversation</div>
+                </div>
+                <div class="contact2">
+                    <div class="contact3">
+						<div class="contact4">Address</div>
+						<div class="contact5">Watu, Balindong L,D,S</div>
+					</div>
+                    <div class="contact3">
+						<div class="contact4">Contact Number</div>
+						<div class="contact5">+63770582927</div>
+					</div>
+                    <div class="contact3">
+						<div class="contact4">Email Address</div>
+						<div class="contact5">badroddin@gmail.com</div>
+					</div>
+                    <div class="contact3">
+						<div class="contact4">Website</div>
+						<div class="contact5">mpngct.com</div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <div class="item6">
+            <div class="pic"></div>
+            <div class="login">
+                <div class="web"><input type="text"placeholder="Your Name"></div>
+                <div class="web"><input type="text"placeholder="Your Email"></div>
+                <div class="web"><input type="text"placeholder="Your Subject" ></div>
+                <div class="message"><input  class="msg" type="text"placeholder="Message"></div>
+                <button class="send">Send Message</button>
+            </div>
+        </div>
+		<div class="footer">
+				<div class="social"> We want stay in touch with you! Please follow us on social media so we can keep</div>
+				<div class="social">in touch</div>
+		</div>
+		<div class="footer1">
+			<div class="headline">
+				<div class="sample">Headline</div>
+				<div class="sample">Sample</div>
+			</div>
+			<div class="headline">
+				<div class="sample">Headline</div>
+				<div class="sample">Sample</div>
+			</div>
+			<div class="headline">
+				<div class="sample">Headline</div>
+				<div class="sample">Sample</div>
+			</div>
+		</div>
+		<div class="footer2">Footer Text</div>
+    </div>
+	<script>
+		function hide(){
+			let element = document.getElementById("cc");
+			element.style.display = (element.style.display == "none") ? "block" : "none";
+		}
+		function change(){
+			let varname = document.getElementById("text") .value;
+			document.getElementById("mytext") .innerHTML = varname;
+			let varname2 = document.getElementById("mipa") .value;
+			document.getElementById("bad") .innerHTML = varname2;
+		}
+	</script>
+</body>
+</html>
+
